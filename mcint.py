@@ -51,6 +51,7 @@ class Domain():
         return point
 
     def integrate(self, trials, func=(lambda point: 1)):
+        """this will be updated to use the VEGAS algorithm for greater efficiency / reduction of variance."""
         integral = 0
         i = 0
         V = 1
