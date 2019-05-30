@@ -47,8 +47,7 @@ class Domain():
         return False
 
     def generatePoint(self):
-        point = [uniform(self.min[i], self.max[i]) for i in range(self.N)]
-        return point
+        return [uniform(self.min[i], self.max[i]) for i in range(self.N)]
 
     def integrate(self, trials, func=(lambda point: 1)):
         """this will be updated to use the VEGAS algorithm for greater efficiency / reduction of variance."""
